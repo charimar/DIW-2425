@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+
+/*cabecera*/
+header{
+text-align: center;
+}
+header div *{
+    margin: 5px 0;
+}
+nav{
+    background-color: chocolate; 
+}
+nav a{
+    display: block;
+    background-color: chocolate;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px;
+}
+nav a:hover, .btn a:hover{
+  
+    background-color: grey;
+  
+}
+
+
+.flex{display: flex;}
+.wrap{flex-wrap: wrap;}
+
+.btn{
+    text-align: center;
+    margin-top: 10px;
+}
+.btn a{
+    background-color: chocolate;
+    display: inline-block;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px;
+}
+.contenedor{
+    width: 90%;
+    margin: 20px auto;
+}
+
+[class*="col-"]{
+    width: 100%;
+    padding: 20px;
+}
+.visible-lg, .visible-xl{
+    display: none;
+}
+
+footer{
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 10px 0;
+}
+.flecha{
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+}
+.flecha img{
+    width: 40px;
+}
+.alin-v{
+    align-items: center;
+}
+@media (min-width: 576px) {
+    .contenedor{
+        width: 60%;
+        margin: 30px auto;
+    }
+  }
+
+
+@media (min-width: 768px) { 
+    nav a{
+        display: inline-block;
+    }
+    .galeria .col-4{
+        width: 50%;
+    }
+    .footer-info{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+ }
+
+@media (min-width: 992px) { 
+    header > div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .col-6 {width: 50%;}
+    .btn{
+        text-align: left;
+    }
+    .galeria .col-4{
+        width: 33.33%;
+    }
+    .visible-lg{
+        display: block;
+    }
+    .contenedor{
+        width: 80%;
+        margin: 50px auto;
+    }
+ }
+
+
+@media (min-width: 1200px) { 
+    nav{
+        text-align: right;
+    }
+    .visible-xl{
+        display: block;
+    }
+   
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+ }
